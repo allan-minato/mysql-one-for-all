@@ -1,6 +1,3 @@
-
- 
-
 DROP DATABASE IF EXISTS SpotifyClone;
 CREATE DATABASE SpotifyClone;
 USE SpotifyClone;
@@ -94,7 +91,7 @@ INSERT INTO tabela_musica (id_cancao, titulo, artista_id, album_id, duracao_segu
 CREATE TABLE tabela_reprod 
 (
     data DATE NOT NULL,
-    usuario_id INT,artista_tabela
+    usuario_id INT,
     id_cancao	INT,
     CONSTRAINT PRIMARY KEY(usuario_id, id_cancao),
     FOREIGN KEY (usuario_id) REFERENCES tabela_usuario (pessoa_usuaria_id),
